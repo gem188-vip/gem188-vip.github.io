@@ -5,7 +5,7 @@ Modern dark-luxury game catalog interface built with React + Vite.
 ## Features
 
 - Responsive yellow category navigation
-- Quick login and prominent registration CTA
+- Header actions containing only Login and Daftar buttons
 - Auto-rotating promotional slider
 - Searchable/filterable game catalog
 - Featured cards for Gates Of Olympus 1000 and Maxwin 3000.000
@@ -13,6 +13,17 @@ Modern dark-luxury game catalog interface built with React + Vite.
 - Trust bar for banks, e-wallets, and USDT
 - Floating Live Chat 24/7 and APK actions
 - Mobile navigation and reduced-motion accessibility support
+
+## External Login and Registration Links
+
+Edit these constants in `src/main.jsx`:
+
+```javascript
+const LOGIN_URL = 'https://your-domain.com/login';
+const REGISTER_URL = 'https://your-domain.com/register';
+```
+
+Both buttons open the external destination in a new browser tab.
 
 ## Local Development
 

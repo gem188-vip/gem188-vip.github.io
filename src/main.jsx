@@ -16,7 +16,6 @@ import {
   Smartphone,
   Sparkles,
   Trophy,
-  User,
   WalletCards,
   X,
   Zap,
@@ -125,6 +124,10 @@ const games = [
 
 const bankingPartners = ['BCA', 'MANDIRI', 'BRI', 'BNI', 'DANA', 'OVO', 'GOPAY', 'USDT'];
 
+// Ganti kedua URL ini dengan alamat eksternal tujuan Anda.
+const LOGIN_URL = 'https://your-domain.com/login';
+const REGISTER_URL = 'https://your-domain.com/register';
+
 function App() {
   const [activeSlide, setActiveSlide] = useState(0);
   const [activeCategory, setActiveCategory] = useState('Semua');
@@ -166,17 +169,23 @@ function App() {
             <Menu size={22} />
           </button>
 
-          <div className="quick-login">
-            <label>
-              <User size={16} />
-              <input type="text" placeholder="Username" aria-label="Username" />
-            </label>
-            <label>
-              <ShieldCheck size={16} />
-              <input type="password" placeholder="Password" aria-label="Password" />
-            </label>
-            <button className="btn btn-ghost">Login</button>
-            <button className="btn btn-primary">Daftar</button>
+          <div className="quick-login" aria-label="Akses akun">
+            <a
+              className="btn btn-ghost"
+              href={LOGIN_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Login
+            </a>
+            <a
+              className="btn btn-primary"
+              href={REGISTER_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Daftar
+            </a>
           </div>
         </div>
 
