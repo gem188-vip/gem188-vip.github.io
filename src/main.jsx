@@ -125,8 +125,8 @@ const games = [
 const bankingPartners = ['BCA', 'MANDIRI', 'BRI', 'BNI', 'DANA', 'OVO', 'GOPAY', 'USDT'];
 
 // Ganti kedua URL ini dengan alamat eksternal tujuan Anda.
-const LOGIN_URL = 'https://your-domain.com/login';
-const REGISTER_URL = 'https://your-domain.com/register';
+const LOGIN_URL = 'https://gem188-dc.com/account/';
+const REGISTER_URL = 'https://gem188-dc.com/account/register/107348280';
 
 function App() {
   const [activeSlide, setActiveSlide] = useState(0);
